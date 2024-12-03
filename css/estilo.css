@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-principal {
+    background-image: url('../assets/img/imagem_fundo1.png');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: 100%; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    width: 100%;
+    height: 80vh;
+    .texto_inicio{
+        padding-top: 100px;
+    }
+}
+
+header {
+    height: 155px;
+}
+
+.quadrado1{
+    width: 100%;
+    height: 130px;
+    background-color: #363432;
+}
+
+.cabecalho_superior{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.slogan{
+    display: flex;
+    margin-left: 130px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2DB580;
+}
+
+
+.cabecalho_meio{
+    display: flex;
+}
+
+.triangulo{
+    display: flex;
+    width: 0; /* Largura do triângulo */
+    height: 0; /* Altura do triângulo */
+    border-left: 40px solid transparent; /* Borda esquerda transparente */
+    border-bottom: 40px solid #FEFEE3; /* Borda inferior colorida, formando o triângulo */
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+.quadrado2{
+    margin-top: -20px;
+    width: 100%;
+    height: 40px;
+    background-color: #FEFEE3;  
+}
+
+
+.quadrado3{
+    width: 100%;
+    height: 30px;
+    background-color: #FEFEE3;  
+}
+
+
+.cabecalho_inferior {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.cabecalho_inferior h4 {
+    margin-left: -20px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+hr{
+    margin-left: -20px;
+    flex: 1;
+    width: 53px;
+    border: none;
+    border-top: 3px solid #000000;
+}
+
+.cabecalho_inferior a {
+    text-decoration: none; /* Remove a linha sublinhada */
+    color: #000000; /* Define a cor desejada, por exemplo, preto */
+}
+
+.cabecalho_inferior h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sobre_nos {
+    position: relative;
+}
+
+.mais_opcoes1_container {
+    display: none; /* Esconde as opções inicialmente */
+    position: absolute;
+    top: 100%; /* Alinha o submenu logo abaixo do item "SOBRE NÓS" */
+    left: 0;
+    background-color: #FEFEE3;
+    z-index: 10; /* Garante que o submenu fique sobre outros elementos */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
+}
+
+.mais_opcoes1 h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 20px;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    cursor: pointer;
+}
+
+.mais_opcoes1 h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sobre_nos:hover .mais_opcoes1_container {
+    display: block; /* Exibe o submenu quando o mouse está sobre "SOBRE NÓS" */
+}
+
+.servicos {
+    position: relative;
+}
+
+.mais_opcoes2_container {
+    display: none; /* Esconde as opções inicialmente */
+    position: absolute;
+    top: 100%; /* Alinha o submenu logo abaixo do item "SOBRE NÓS" */
+    left: 0;
+    background-color: #FEFEE3;
+    z-index: 10; /* Garante que o submenu fique sobre outros elementos */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
+}
+
+.mais_opcoes2 h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 20px;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    cursor: pointer;
+}
+
+.mais_opcoes2 h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.servicos:hover .mais_opcoes2_container {
+    display: block; /* Exibe o submenu quando o mouse está sobre "SOBRE NÓS" */
+}
+
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -350px;
+}
+
+
+.titulo_inicio{
+    font-size: 40px;
+    color: #ffffff;
+}
+.paragrafo_inicio{
+    color: #ffffff;
+}
+
+
+input[type="button"]{
+    color: #363432;
+    background-color: #00F594;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: #00DF94; /* Adiciona um leve efeito ao passar o mouse (opcional) */
+}
+
+button {
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: #363432; /* Define a cor do texto */
+    padding: 10px 20px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adiciona um leve efeito ao passar o mouse (opcional) */
+}
+
+.voltar_esquerdo{
+    width: 35px;
+}
+
+.voltar_direito{
+    width: 35px;
+    transform: rotate(180deg); /* Rotaciona o botão em 180 graus */
+}
+
+.botoes_voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.quadrado_branco{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+.whatsapp {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.whatsapp img{
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp h4{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.email{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 350px;
+}
+
+.email img {
+    width: 35px;
+    height: 35px;
+}
+
+.email h4{
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.quadrado_cinza{
+    width: 100%;
+    height: 70px;
+    background-color: #363432;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quadrado_cinza h4{
+    color: #FFFFFF;
+}
+
+.endereco{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.quadrado_cinza p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-right: 75px;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fundo_redes_sociais{
+    width: 45px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+.redes_sociais img{
+    width: 45px;
+    height: 40px;
+}

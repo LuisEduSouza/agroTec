@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-principal {
+    background-color: #363432;
+    width: 100%;  /* Largura total da viewport */
+    height: 75vh; /* Altura total da viewport */
+    display: flex;
+    flex-direction: row;
+}
+
+
+header {
+    height: 155px;
+}
+
+.quadrado1{
+    width: 100%;
+    height: 130px;
+    background-color: #363432;
+}
+
+.cabecalho_superior{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.slogan{
+    display: flex;
+    margin-left: 130px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2DB580;
+}
+
+.cabecalho_meio{
+    display: flex;
+}
+
+.triangulo{
+    display: flex;
+    width: 0; /* Largura do triângulo */
+    height: 0; /* Altura do triângulo */
+    border-left: 40px solid transparent; /* Borda esquerda transparente */
+    border-bottom: 40px solid #FEFEE3; /* Borda inferior colorida, formando o triângulo */
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+.quadrado2{
+    margin-top: -20px;
+    width: 100%;
+    height: 40px;
+    background-color: #FEFEE3;  
+}
+
+
+.quadrado3{
+    width: 100%;
+    height: 30px;
+    background-color: #FEFEE3;  
+}
+
+
+.cabecalho_inferior {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.cabecalho_inferior h4 {
+    margin-left: -20px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.indicie-pagina{
+    margin-left: 5px;
+    flex: 1;
+    width: 50px;
+    border: none;
+    border-top: 3px solid #000000;
+}
+
+.linha_contatos{
+    width: 540px;
+    border-top: 0.5px solid #FEFEE3;
+}
+
+.cabecalho_inferior a {
+    text-decoration: none; /* Remove a linha sublinhada */
+    color: #000000; /* Define a cor desejada, por exemplo, preto */
+}
+
+.cabecalho_inferior h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sobre_nos {
+    position: relative;
+}
+
+.mais_opcoes1_container {
+    display: none; /* Esconde as opções inicialmente */
+    position: absolute;
+    top: 100%; /* Alinha o submenu logo abaixo do item "SOBRE NÓS" */
+    left: 0;
+    background-color: #FEFEE3;
+    z-index: 10; /* Garante que o submenu fique sobre outros elementos */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
+}
+
+.mais_opcoes1 h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 20px;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    cursor: pointer;
+}
+
+.mais_opcoes1 h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sobre_nos:hover .mais_opcoes1_container {
+    display: block; /* Exibe o submenu quando o mouse está sobre "SOBRE NÓS" */
+}
+
+.servicos {
+    position: relative;
+}
+
+.mais_opcoes2_container {
+    display: none; /* Esconde as opções inicialmente */
+    position: absolute;
+    top: 100%; /* Alinha o submenu logo abaixo do item "SOBRE NÓS" */
+    left: 0;
+    background-color: #FEFEE3;
+    z-index: 10; /* Garante que o submenu fique sobre outros elementos */
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
+}
+
+.mais_opcoes2 h4 {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 20px;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    cursor: pointer;
+}
+
+.mais_opcoes2 h4:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.servicos:hover .mais_opcoes2_container {
+    display: block; /* Exibe o submenu quando o mouse está sobre "SOBRE NÓS" */
+}
+
+button {
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: #363432; /* Define a cor do texto */
+    padding: 10px 20px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adiciona um leve efeito ao passar o mouse (opcional) */
+}
+
+.div-esquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.email img {
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+
+.email h4{
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.whatsapp {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-redes-sociais{
+    width: 7px;
+    height: 35px;
+    background-color: #FEFEE3;
+}
+
+.whatsapp img{
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+
+.whatsapp h4{
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.endereco{
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.endereco-palavras{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.endereco img {
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+
+.endereco h4{
+    color: #FFFFFF;
+}
+
+.endereco-titulo{
+    margin-top: -10px;
+}
+
+.fundo_redes_sociais{
+    width: 45px;
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+
+.quadrado_cinza p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-right: 75px;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo_redes_sociais{
+    background-color: #FFFFFF;
+}
+
+.redes_sociais img{
+    width: 45px;
+    height: 40px;
+}
+
+.facebook {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.linkedin {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-direita{
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #363432;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.formulario::placeholder{
+    text-align: 10px;
+}
+
+
+.mensagem{
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #363432;
+    cursor: pointer;
+    width: 500px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="button"]{
+    margin-left: 375px;
+    color: #363432;
+    background-color: #2DB580;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
